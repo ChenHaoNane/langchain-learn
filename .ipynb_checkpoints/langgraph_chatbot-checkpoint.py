@@ -215,8 +215,6 @@ for event in events:
 snapshot = graph.get_state(config)
 
 messages = snapshot.values['messages']
-
-
 df = pd.DataFrame([{
     'content': msg.content,
     'message_id': msg.id,
